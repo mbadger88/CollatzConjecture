@@ -1,3 +1,15 @@
 #! /usr/bin/python3
 
+num = 0
+steps = 0
+while num <= 1: # get an integer above 1
+    num = int(input("Enter any integer above 1: "))
+while num != 1:
+    if num % 2 == 0: #if number is even
+        num = num/2
+        steps = steps + 1
+    else:
+        num = (num*3)+1
+        steps = steps + 1
 
+print(steps)
